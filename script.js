@@ -32,8 +32,9 @@ musicBtn.addEventListener('click', () => {
     isPlaying = true;
   } else {
     music.pause();
-    musicBtn.textContent = '▶️ continuar canción';
+    musicBtn.textContent = '▶ Continuar canción';
     isPlaying = false;
   }
 
 });
+
