@@ -1,0 +1,517 @@
+:root {
+  --primary: #4C563B;
+  --secondary: #A4AD9C;
+  --accent: #CBD3C2;
+  --light: #445a14;
+  --muted: #F3F3F3;
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(
+    180deg,
+    #f7f8f4 0%,
+    #eef1e9 40%,
+    #e5eadf 100%
+  );
+
+}
+
+.section {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 2.5rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 1100px;
+  box-shadow: 0 12px 30px rgba(76, 86, 59, 0.08);
+}
+
+/* HERO */
+.hero {
+  background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url('images/foto.jpeg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 5rem 1rem;
+  color: white;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.hero h2 {
+  font-family: 'Great Vibes', sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+/* TITULOS */
+.title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.4rem;
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.title-icon {
+  width: 40%;
+  max-width: 100px;
+  height: auto;
+}
+
+/* TEXTOS ESPECIALES */
+.story,
+.quote {
+  font-family: 'Great Vibes', cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 2rem;
+  
+}
+.story2{
+  font-family: 'Great Vibes', cursive;
+  font-style: italic;
+  text-align: center;
+  font-size: 25px;
+  
+}
+
+.story p {
+  color: black;
+}
+
+.quote1 {
+  font-family: 'Great Vibes', cursive;
+  font-style: italic;
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+}
+
+/* CUENTA REGRESIVA */
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.countdown div {
+  background: rgba(0,0,0,0.4);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.countdown span {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* SECCIONES */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* LAYOUTS */
+.parents,
+.confirmacion,
+.dress-code,
+.two-columns {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* UBICACION */
+.location {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--muted);
+  border-radius: 12px;
+}
+
+.location a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.location a:hover {
+  background-color: var(--secondary);
+  color: #fff;
+  transform: scale(1.05);
+
+}
+
+/* RSVP */
+.rsvp {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.rsvp a {
+  background: var(--primary);
+  color: white;
+  padding: 0.6rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: .3s ease;
+}
+
+.rsvp a:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* DRESS CODE */
+.dress-code img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 16px;
+  margin-top: .8rem;
+}
+
+/* ITINERARIO */
+.itinerario {
+  display: grid;
+  gap: 1.2rem;
+  margin: 1.5rem 0;
+}
+
+.evento {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 16px;
+}
+
+.evento-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.evento-info .hora {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.evento-info .nombre {
+  font-size: 1rem;
+  color: #555;
+}
+
+.evento img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  
+}
+
+/* REGALOS QR */
+.qr-box {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.qr-box summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 30px;
+  background-color: var(--primary);
+  color: white;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.qr-box summary:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+
+.qr-box summary::-webkit-details-marker {
+  display: none;
+}
+
+.qr-content {
+  margin-top: 1.5rem;
+}
+
+.qr-content img {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.music-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1rem;
+}
+
+.music-btn {
+  background-color: var(--primary);
+  margin-bottom: 0%;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.6rem 1.8rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+  background-color: var(--secondary);
+  transform: scale(1.05);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .hero h1 { font-size: 2.6rem; }
+  .hero h2 { font-size: 1.5rem; }
+
+  .countdown {
+    
+    grid-template-columns: repeat(4);
+    margin-bottom: -3;
+    margin-top: 5rem;
+  }
+  .countdown div {
+    margin-top: 4rem;
+    
+  }
+  .hero {
+    margin-bottom: -1rem;
+  }
+
+  .evento img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .evento-info .hora {
+    font-size: 1.2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+}
+
+
+
+
+/* SOLO ADULTOS */
+.adults-only {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.adults-card {
+  background: var(--muted);
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.adults-icon {
+  width: 90px;
+  height: auto;
+  opacity: 0.85;
+}
+
+.adults-text {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary);
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.adults-text span {
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+
+@media (max-width: 600px) {
+  .adults-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .adults-text {
+    text-align: center;
+  }
+
+  .adults-icon {
+    width: 75px;
+  }
+}
+
+
+.adults-icon {
+  transition: transform 0.25s ease;
+}
+
+.adults-card:hover .adults-icon {
+  transform: scale(1.08);
+}
+
+
+
+
+
+.footer {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary)
+  );
+  color: #F3F3F3;
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;
+  margin-top: 4rem;
+}
+
+.footer-love {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.footer-names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.6rem;
+  margin: 0.5rem 0;
+}
+
+.footer-date {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .footer-names {
+    font-size: 2.2rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.confirmacion {
+  position: relative;
+  padding-bottom: 5rem; /* espacio reservado para el botón */
+}
+
+/* Botón WhatsApp */
+.whatsapp-confirmacion {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  
+
+  margin: 2rem auto 0;  
+  padding: 0.7rem 1.6rem;
+
+  background-color: #25d366;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+
+  border-radius: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.whatsapp-confirmacion:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05);
+}
+
+.whatsapp-confirmacion img {
+  width: 22px;
+  height: 22px;
+}
+@media (max-width: 600px) {
+  .whatsapp-confirmacion {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.95rem;
+  }
+}
