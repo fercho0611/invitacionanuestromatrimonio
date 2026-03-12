@@ -28,11 +28,12 @@ let isPlaying = false;
 musicBtn.addEventListener('click', () => {
   if (!isPlaying) {
     music.play();
-    musicBtn.textContent = '⏸️¸ Pausar';
+    musicBtn.textContent = '⏸ Pausar';
     isPlaying = true;
   } else {
     music.pause();
     musicBtn.textContent = '▶️ continuar canción';
     isPlaying = false;
   }
+
 });
